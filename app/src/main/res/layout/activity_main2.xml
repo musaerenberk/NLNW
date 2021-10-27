@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66BAFD"
+    tools:context=".MainActivity2">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="800dp"
+        android:layout_height="800dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/asd" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="367dp"
+        android:layout_height="516dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Go on"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColorHint="#292626"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="125dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="54dp"
+        android:backgroundTint="#0092E137"
+        android:onClick="back"
+        android:text="BACK"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="125dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="79dp"
+        android:backgroundTint="#0092E137"
+        android:onClick="Save"
+        android:text="save"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
